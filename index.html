@@ -14,7 +14,9 @@
     <link href="css/styles.css" rel="stylesheet">
 </head>
 
-<body>
+
+ <body onload="myFunction()">
+<div id="loading"></div>
    
     <div id="mobile-menu-open" class="shadow-large">
         <i class="fa fa-bars" aria-hidden="true"></i>
@@ -223,6 +225,21 @@ Contact</a>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
 	    <marquee><h2>Thanks visit again....</marquee>
+		      <script>
+        // $(document).ready(function(){
+            //  $('div#loading').removeAttr('id');
+        // });
+        var preloader = document.getElementById("loading");
+        // window.addEventListener('load', function(){
+        //  preloader.style.display = 'none';
+        //  })
+
+        function myFunction(){
+            preloader.style.display = 'none';
+        };
+    </script>
+
+
 
 </body>
 
